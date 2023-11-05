@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    background:#16392b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    width: 75%;
+    height: 200px;
+    background:rgb(55 90 58);
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0);
+    font-family: sans-serif;
+    padding: 20px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-stretch: condensed;
+    font-weight: bold;
+}
+.Temperature-icon{
+    font-size: 45px;
+    color: #fff;
+}
+h1{
+    color:black;
+    font-size: 40px;
+}
+#celsius , #fahrenheit , #kelvin{
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.button{
+    float: left;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.a{ 
+    width: 200px;
+    height: 40px;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid black; 
+    color: black;
+}
+.b{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 80px;
+    cursor: pointer;
+    background:rgb(138 149 34);
+    color: #fff;
+}
+
+
+@media screen and (max-width: 500px) {
+    .container{ 
+        height: 400px;    
+}
+.title{
+    margin-left: 45px;
+}
+#celsius , #fahrenheit , #kelvin{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.button{
+    margin-top: 20px;
+    margin-left: 110px;
+}
+}
